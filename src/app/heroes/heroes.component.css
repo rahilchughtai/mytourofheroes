@@ -1,0 +1,17 @@
+.hero {
+  border: 2px cyan solid;
+  margin: 1em;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.heroes-list {
+  border: 2px rgb(0, 76, 218) solid;
+  padding: 0.5em;
+}
+
+
+.selected {
+  background-color: rgb(39, 68, 68);
+  color: white;
+}

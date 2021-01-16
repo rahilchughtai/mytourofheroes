@@ -1,0 +1,22 @@
+<div class="heroes-list">
+  <h2>Strongest Heroes - List</h2>
+
+  <div
+    (click)="onSelect(hero)"
+    class="hero"
+    [class.selected]="hero==selectedHero"
+    *ngFor="let hero of heroes"
+  >
+    <h2>{{hero.name | uppercase}} Details</h2>
+    <div>
+      <label
+        >name:
+        <input [(ngModel)]="hero.name" placeholder="name" />
+      </label>
+    </div>
+    <div><span>Tier: </span>{{hero.tier}}</div>
+    <div><span>ID: </span>{{hero.id}}</div>
+  </div>
+</div>
+
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
