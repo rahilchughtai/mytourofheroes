@@ -9,6 +9,8 @@ import { HeroDetailComponent } from "./hero-detail/hero-detail.component";
 import { HeroService } from "./services/hero.service";
 import { MessagesComponent } from "./messages/messages.component";
 import { MessageService } from "./services/message.service";
+import { NewsdataService } from './services/newsdata.service';
+import { NewsflashComponent } from './newsflash/newsflash.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, MatCardModule, MatSliderModule],
@@ -16,9 +18,10 @@ import { MessageService } from "./services/message.service";
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    NewsflashComponent
   ],
   bootstrap: [AppComponent],
-  providers: [HeroService, MessageService]
+  providers: [HeroService, MessageService, NewsdataService]
 })
 export class AppModule {}
